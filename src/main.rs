@@ -4,6 +4,8 @@ mod vegetation;
 mod drawable_trait;
 mod terrain;
 mod texture_manager;
+mod entity_trait;
+mod tile;
 
 
 use macroquad::prelude::*;

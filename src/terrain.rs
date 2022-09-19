@@ -25,9 +25,6 @@ impl Drawable for Terrain{
                     texture_name = "Land";
                 }
         }
-        let texture = texture_manager.get_texture(texture_name).unwrap();
-        let mut draw_parameters = DrawTextureParams::default();
-        draw_parameters.dest_size = Option::Some(Vec2{x:width, y:height});
-        draw_texture_ex(*texture,x as f32, y as f32,WHITE,draw_parameters);
+        texture_manager.draw_texture(x,y,width, height,texture_name);
     }
 }
